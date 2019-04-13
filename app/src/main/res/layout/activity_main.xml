@@ -29,6 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:tint="@color/common_google_signin_btn_text_dark_pressed"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        app:maxImageSize="32dp"/>
 
 </android.support.design.widget.CoordinatorLayout>
