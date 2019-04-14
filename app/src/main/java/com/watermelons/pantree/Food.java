@@ -3,6 +3,7 @@ package com.watermelons.pantree;
 import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class Food implements Serializable, Comparable<Food>{
     private String name;
@@ -29,6 +30,7 @@ public class Food implements Serializable, Comparable<Food>{
     }
 
     public long getAge() {
-        return daysOld;
+        updateAge();
+        return TimeUnit.DAYS.convert(daysOld, TimeUnit.MILLISECONDS);
     }
 }
